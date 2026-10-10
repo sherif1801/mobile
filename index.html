@@ -1,0 +1,320 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FOR YOU MOBILES</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: #142d4e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 32px;
+            letter-spacing: 2px;
+        }
+
+        /* Navigation */
+        nav {
+            background: #087f8c;
+            padding: 14px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffe082;
+        }
+
+        /* Home Section */
+        #home {
+            padding: 35px 15px;
+            text-align: center;
+        }
+
+        #home h2 {
+            color: #142d4e;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        #home > p {
+            margin-bottom: 25px;
+        }
+
+        /* Phone Cards */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            padding: 10px 20px 40px;
+        }
+
+        .card {
+            background: white;
+            width: 300px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px #00000015;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+        }
+
+        .card h3 {
+            color: #087f8c;
+            font-size: 23px;
+            margin-bottom: 15px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 210px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            margin: 8px 0;
+            font-size: 14px;
+        }
+
+        .price {
+            color: #142d4e;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 12px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #087f8c;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 12px;
+        }
+
+        .btn:hover {
+            background: #142d4e;
+        }
+
+        /* About Section */
+        #about {
+            background: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        #about h2,
+        #contact h2 {
+            color: #087f8c;
+            margin-bottom: 15px;
+        }
+
+        #about p {
+            max-width: 750px;
+            margin: auto;
+        }
+
+        /* Contact Section */
+        #contact {
+            padding: 40px 20px;
+            text-align: center;
+            background: #e7f0f7;
+        }
+
+        #contact p {
+            margin: 8px;
+        }
+
+        /* Footer */
+        footer {
+            background: #142d4e;
+            color: white;
+            text-align: center;
+            padding: 22px 15px;
+        }
+
+        footer a {
+            color: #80deea;
+            text-decoration: none;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 25px;
+            }
+
+            nav a {
+                margin: 0 8px;
+                font-size: 14px;
+            }
+
+            .card {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>FOR YOU MOBILES</h1>
+        <p>Your Trusted Smartphone Store</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Explore Our Latest Mobiles</h2>
+        <p>Discover stylish smartphones with amazing features.</p>
+
+        <div class="container">
+
+            <!-- Phone 1 -->
+            <div class="card">
+                <h3>Apple iPhone</h3>
+
+                <img src="C:\Users\ELCOT\Music\download.webp"
+                     alt="Apple iPhone">
+
+                <p>Experience premium design, smooth performance,
+                   high-quality photography and a user-friendly
+                   smartphone experience.</p>
+
+                <p><strong>Features:</strong> iOS, Face ID,
+                   advanced camera</p>
+
+                <p class="price">Price: Contact for Price</p>
+
+                <a href="#contact" class="btn">Enquire Now</a>
+            </div>
+
+            <!-- Phone 2 -->
+            <div class="card">
+                <h3>Samsung Galaxy</h3>
+
+                <img src="C:\Users\ELCOT\Music\download.webp"
+                     alt="Samsung Galaxy">
+
+                <p>Enjoy an immersive display, powerful
+                   performance and excellent photography
+                   for everyday use.</p>
+
+                <p><strong>Features:</strong> AMOLED display,
+                   Android, quality camera</p>
+
+                <p class="price">Price: Contact for Price</p>
+
+                <a href="#contact" class="btn">Enquire Now</a>
+            </div>
+
+            <!-- Phone 3 -->
+            <div class="card">
+                <h3>OnePlus Smartphone</h3>
+
+                <img src="C:\Users\ELCOT\Music\download.webp"
+                     alt="OnePlus Smartphone">
+
+                <p>Enjoy fast performance, stylish design
+                   and a smooth experience for gaming,
+                   entertainment and multitasking.</p>
+
+                <p><strong>Features:</strong> Fast charging,
+                   Android, high-performance processor</p>
+
+                <p class="price">Price: Contact for Price</p>
+
+                <a href="#contact" class="btn">Enquire Now</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+
+        <p>
+            Welcome to FOR YOU MOBILES! We help customers
+            explore smartphones from popular brands.
+            Our goal is to provide a friendly shopping
+            experience, useful product information and
+            assistance in choosing a mobile phone that
+            suits their needs and budget.
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+
+        <p><strong>Store Name:</strong> FOR YOU MOBILES</p>
+        <p><strong>Phone:</strong> +91 XXXXXXXXXX</p>
+        <p><strong>Email:</strong> yourstore@example.com</p>
+        <p><strong>Address:</strong> Add your shop address here</p>
+
+        <a href="mailto:yourstore@example.com" class="btn">
+            Email Us
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 FOR YOU MOBILES. All Rights Reserved.</p>
+        <p>Your Trusted Smartphone Store</p>
+        <p>
+            <a href="#home">Home</a> |
+            <a href="#about">About</a> |
+            <a href="#contact">Contact</a>
+        </p>
+    </footer>
+
+</body>
+</html>
